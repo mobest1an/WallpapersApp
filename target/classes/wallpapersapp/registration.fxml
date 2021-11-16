@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="810.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wallpapersapp.RegistrationController">
+   <children>
+      <AnchorPane layoutY="67.0" prefHeight="373.0" prefWidth="810.0" style="-fx-background-color: #fafafafa;">
+         <children>
+            <Button fx:id="registrationButton" layoutX="330.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #2E3348;" text="Зарегистрироваться" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="loginField" layoutX="234.0" layoutY="111.0" prefHeight="26.0" prefWidth="342.0" promptText="Логин:" />
+            <PasswordField fx:id="passwordField" layoutX="234.0" layoutY="153.0" prefHeight="26.0" prefWidth="342.0" promptText="Пароль:" />
+            <Label layoutX="315.0" layoutY="33.0" text="Регистрация" textFill="#7c7c7c">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="330.0" layoutY="264.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-color: #2E3348;" text="Назад" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" layoutX="234.0" layoutY="192.0" textFill="RED">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="285.0" layoutY="10.0" text="Каталог картинок" textFill="#7c7c7c">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

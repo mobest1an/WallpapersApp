@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="440.0" prefWidth="810.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wallpapersapp.MainAdminController">
+   <children>
+      <Button fx:id="exitButton" layoutX="676.0" layoutY="16.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #F39C63;" text="Выход" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="359.0" layoutY="9.0" text="Админ" textFill="#7c7c7c">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="67.0" prefHeight="373.0" prefWidth="810.0" style="-fx-background-color: #fafafafa;">
+         <children>
+            <ScrollPane prefHeight="373.0" prefWidth="810.0">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="820.0" prefWidth="810.0">
+                     <children>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image1.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image2.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image3.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image4.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image5.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image6.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image7.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image8.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image9.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image10.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image11.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image12.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image13.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image14.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="681.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/image15.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
