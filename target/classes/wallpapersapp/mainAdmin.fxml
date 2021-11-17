@@ -22,9 +22,9 @@
       </Label>
       <AnchorPane layoutY="67.0" prefHeight="373.0" prefWidth="810.0" style="-fx-background-color: #fafafafa;">
          <children>
-            <ScrollPane prefHeight="373.0" prefWidth="810.0">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="373.0" prefWidth="810.0">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="820.0" prefWidth="810.0">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="830.0" prefWidth="810.0">
                      <children>
                         <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>

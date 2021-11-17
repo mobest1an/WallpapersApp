@@ -6,6 +6,10 @@ public class ContainerBean { //класс хранлище объекта мен
     
     private static DataBaseManager dbManager = new DataBaseManager();
 
+    private static AlertCreator alertCreator = new AlertCreator();
+
+    private static WallpapersActions wallpapersActions = new WallpapersActions();
+
     public static String getUserName() {
         return userName;
     }
@@ -20,5 +24,21 @@ public class ContainerBean { //класс хранлище объекта мен
 
     public static void setDbManager(DataBaseManager dbManager) {
         ContainerBean.dbManager = dbManager;
+    }
+
+    public static AlertCreator getAlertCreator() {
+        return alertCreator;
+    }
+
+    public static void setAlertCreator(AlertCreator alertCreator) {
+        ContainerBean.alertCreator = alertCreator;
+    }
+
+    public static WallpapersActions getWallpapersActions() {
+        return wallpapersActions;
+    }
+
+    public static void setWallpapersActions(WallpapersActions wallpapersActions) {
+        ContainerBean.wallpapersActions = wallpapersActions;
     }
 }

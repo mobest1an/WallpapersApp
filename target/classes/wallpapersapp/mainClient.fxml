@@ -12,55 +12,60 @@
    <children>
       <AnchorPane layoutY="67.0" prefHeight="373.0" prefWidth="810.0" style="-fx-background-color: #fafafafa;">
          <children>
-            <ScrollPane prefHeight="373.0" prefWidth="810.0">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="373.0" prefWidth="810.0">
                <content>
-                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="810.0">
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="530.0" prefWidth="810.0">
                      <children>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_1" fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image1.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_2" fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image2.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_3" fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image3.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_4" fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image4.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_5" fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image5.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_6" fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image6.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_7" fitHeight="151.0" fitWidth="246.0" layoutX="10.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image7.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_8" fitHeight="151.0" fitWidth="246.0" layoutX="278.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image8.jpg" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="image_9" fitHeight="151.0" fitWidth="246.0" layoutX="546.0" layoutY="347.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@images/image9.jpg" />
                            </image>
                         </ImageView>
+                        <Label layoutX="134.0" layoutY="492.0" text="Чтобы посмотреть больше обоев, нужно войти как админ!" textFill="#7c7c7c">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
                      </children>
                   </AnchorPane>
                </content>
