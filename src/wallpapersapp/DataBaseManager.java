@@ -1,7 +1,6 @@
 package wallpapersapp;
 
 import java.sql.*;
-import java.util.HashMap;
 
 public class DataBaseManager { //класс для работы с базой данных
 
