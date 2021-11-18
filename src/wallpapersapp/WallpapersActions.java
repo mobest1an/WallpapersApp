@@ -19,7 +19,7 @@ import java.util.Optional;
 
 public class WallpapersActions {
 
-    public void openMenu(Image image) throws IOException {
+    public void openMenu(Image image, int index) {
         ButtonType saveButton = new ButtonType("Save");
         ButtonType openButton = new ButtonType("Open");
         ButtonType installButton = new ButtonType("Install");
@@ -28,11 +28,19 @@ public class WallpapersActions {
         Optional<ButtonType> optional = alert.showAndWait();
         if (optional.isPresent()) {
             if (optional.get().equals(saveButton)) {
-                save(image);
+                try {
+                    save(image);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             } else if (optional.get().equals(openButton)) {
-                open(image);
+                try {
+                    open(image);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             } else if (optional.get().equals(installButton)) {
-
+                install(index);
             }
         }
     }
@@ -61,5 +69,10 @@ public class WallpapersActions {
         newStage.setScene(new Scene(root, 950, 530));
         newStage.setResizable(false);
         newStage.show();
+    }
+
+    private void install(int index) {
+        String path = "C:\\Users\\erikk\\NetBeansProjects\\WallpapersApp\\src\\wallpapersapp\\images\\image" + index + ".jpg";
+        ContainerBean.getWallpaperChanger().changeWallpaper(path);
     }
 }

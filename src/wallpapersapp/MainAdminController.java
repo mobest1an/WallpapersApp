@@ -43,7 +43,66 @@ public class MainAdminController {
     private ImageView image_15;
 
     public void initialize() {
-        addHandlers(image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10, image_11, image_12, image_13, image_14, image_15);
+
+        image_1.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_1.getImage(), 1);
+        });
+
+        image_2.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_2.getImage(), 2);
+        });
+
+        image_3.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_3.getImage(), 3);
+        });
+
+        image_4.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_4.getImage(), 4);
+        });
+
+        image_5.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_5.getImage(), 5);
+        });
+
+        image_6.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_6.getImage(), 6);
+        });
+
+        image_7.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_7.getImage(), 7);
+        });
+
+        image_8.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_8.getImage(), 8);
+        });
+
+        image_9.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_9.getImage(), 9);
+        });
+
+        image_10.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_10.getImage(), 10);
+        });
+
+        image_11.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_11.getImage(), 11);
+        });
+
+        image_12.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_12.getImage(), 12);
+        });
+
+        image_13.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_13.getImage(), 13);
+        });
+
+        image_14.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_14.getImage(), 14);
+        });
+
+        image_15.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
+            ContainerBean.getWallpapersActions().openMenu(image_15.getImage(), 15);
+        });
 
         exitButton.setOnAction(event -> {
             try {
@@ -52,17 +111,5 @@ public class MainAdminController {
                 e.printStackTrace();
             }
         });
-    }
-
-    private void addHandlers(ImageView... imageViews) {
-        for (ImageView imageView : imageViews) {
-            imageView.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
-                try {
-                    ContainerBean.getWallpapersActions().openMenu(imageView.getImage());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
-        }
     }
 }

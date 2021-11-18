@@ -14,6 +14,8 @@ public class ContainerBean { //класс хранлище объекта мен
 
     private static Image openedImage;
 
+    private static WallpaperChanger wallpaperChanger = new WallpaperChanger();
+
     public static String getUserName() {
         return userName;
     }
@@ -52,5 +54,13 @@ public class ContainerBean { //класс хранлище объекта мен
 
     public static void setOpenedImage(Image openedImage) {
         ContainerBean.openedImage = openedImage;
+    }
+
+    public static WallpaperChanger getWallpaperChanger() {
+        return wallpaperChanger;
+    }
+
+    public static void setWallpaperChanger(WallpaperChanger wallpaperChanger) {
+        ContainerBean.wallpaperChanger = wallpaperChanger;
     }
 }
