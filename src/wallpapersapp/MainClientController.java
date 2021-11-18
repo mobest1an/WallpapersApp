@@ -60,7 +60,11 @@ public class MainClientController {
     private void addHandlers(ImageView... imageViews) {
         for (ImageView imageView : imageViews) {
             imageView.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
-                ContainerBean.getWallpapersActions().openMenu(imageView.getImage());
+                try {
+                    ContainerBean.getWallpapersActions().openMenu(imageView.getImage());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             });
         }
     }

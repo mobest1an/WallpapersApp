@@ -1,6 +1,9 @@
 package wallpapersapp;
 
 import javafx.embed.swing.SwingFXUtils;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
@@ -16,7 +19,7 @@ import java.util.Optional;
 
 public class WallpapersActions {
 
-    public void openMenu(Image image) {
+    public void openMenu(Image image) throws IOException {
         ButtonType saveButton = new ButtonType("Save");
         ButtonType openButton = new ButtonType("Open");
         ButtonType installButton = new ButtonType("Install");
@@ -25,13 +28,9 @@ public class WallpapersActions {
         Optional<ButtonType> optional = alert.showAndWait();
         if (optional.isPresent()) {
             if (optional.get().equals(saveButton)) {
-                try {
-                    save(image);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+                save(image);
             } else if (optional.get().equals(openButton)) {
-
+                open(image);
             } else if (optional.get().equals(installButton)) {
 
             }
@@ -52,5 +51,15 @@ public class WallpapersActions {
             ImageIO.write(bufferedImage, "jpg", fileOutputStream);
             fileOutputStream.close();
         }
+    }
+
+    private void open(Image image) throws IOException {
+        ContainerBean.setOpenedImage(image);
+        FXMLLoader fxmlLoader = new FXMLLoader(WallpapersApp.class.getResource("openImage.fxml"));
+        Parent root = fxmlLoader.load();
+        Stage newStage = new Stage();
+        newStage.setScene(new Scene(root, 950, 530));
+        newStage.setResizable(false);
+        newStage.show();
     }
 }
