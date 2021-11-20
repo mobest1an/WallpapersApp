@@ -66,6 +66,8 @@ public class WallpapersActions {
         FXMLLoader fxmlLoader = new FXMLLoader(WallpapersApp.class.getResource("openImage.fxml"));
         Parent root = fxmlLoader.load();
         Stage newStage = new Stage();
+        newStage.setTitle("Просмотр изображения");
+        newStage.getIcons().add(new Image(WallpapersApp.class.getResourceAsStream("images/logo.png")));
         newStage.setScene(new Scene(root, 950, 530));
         newStage.setResizable(false);
         newStage.show();
